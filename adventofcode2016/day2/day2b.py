@@ -11,7 +11,7 @@ matrix = [[0,0,1,0,0],
 	  [0,0,13,0,0]]
 
 def moveOnKeyPad(direction, location):
-   if direction == 'U': 
+   if direction == 'U':
       if location[0] > 0 and matrix[location[0]-1][location[1]] != 0:
          location[0] -= 1
    if direction == 'D':
@@ -26,7 +26,7 @@ def moveOnKeyPad(direction, location):
 
 
 with open ("input.txt", "r") as myfile:
- 
+
    for line in myfile:
        location = [2,0]
        for direction in line:
@@ -34,4 +34,4 @@ with open ("input.txt", "r") as myfile:
 
        print matrix[location[0]][location[1]]
        print location
-       print "new line" 
+       print "new line"
